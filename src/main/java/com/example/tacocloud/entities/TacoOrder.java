@@ -10,6 +10,10 @@ import org.hibernate.validator.constraints.CreditCardNumber;
 
 @Data public class TacoOrder {
 
+    private static final long serialVersionUID = 1L;
+    private Long id;
+    private Data placedAt;
+
     @NotBlank(message="Delivery name is required")
     private String deliveryName;
 
